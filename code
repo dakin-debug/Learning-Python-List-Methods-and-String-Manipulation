@@ -1,0 +1,32 @@
+# Learning-Python-List-Methods-and-String-Manipulation
+
+# 1. Create a list named food with two elements, "rice" and "beans".
+food = ["rice", "beans"]
+
+# 2. Append the string "broccoli" to food using .append().
+food.append("broccoli")
+
+# 3. Add the strings "bread" and "pizza" to food using .extend().
+food.extend(["bread", "pizza"])
+
+# 4. Print the first two items in the food list using print() and slice notation.
+first_two_items = food[0:2]
+print(first_two_items)
+
+# 5. Print the last item in food using print() and index notation.
+last_item = food[-1]
+print(last_item)
+
+# 6. Create a list called breakfast from the string "eggs, fruit, orange juice" using the string .split() method.
+breakfast = "eggs, fruit, orange juice"
+breakfast_list = breakfast.split(",")
+print(breakfast_list)
+
+# 7. Verify that breakfast has three items using len().
+number_of_items = len(breakfast_list)
+print(number_of_items)
+
+# 8. Create a new list called lengths using a list comprehension that contains the lengths of each string 
+# in the breakfast list.
+lengths = [len(word) for word in breakfast_list]
+print(lengths)
